@@ -92,11 +92,11 @@ const Header = () => {
         <span className="header_line"></span>
         <div className="navbar">
           <nav className={`nav-links `}>
-            <NavLink to="/home" activeClassName="active" exact>Bosh sahifa</NavLink>
+            <NavLink to="/" activeClassName="active" exact>Bosh sahifa</NavLink>
             <NavLink to="/about" activeClassName="active" exact>Loyiha haqida</NavLink>
             <NavLink to="/nmm" activeClassName="active" exact>NMM</NavLink>
             <NavLink to="/news" activeClassName="active" exact>Yangiliklar</NavLink>
-            <NavLink to="/documents" activeClassName="active" exact>Normativ xujjatlar</NavLink>
+            <NavLink to="/docs" activeClassName="active" exact>Normativ xujjatlar</NavLink>
             <NavLink to="/materials" activeClassName="active" exact>Material</NavLink>
             <NavLink to="/contact" activeClassName="active" exact>Aloqa</NavLink>
           </nav>
@@ -118,7 +118,7 @@ const Header = () => {
               {
                 isMenuOpen ? (
                   <div className="show_sm_box_wrapper">
-                 <div className="show_sm_box">
+                    <div className="show_sm_box">
                       <div className="search">
                         <input type="text" className="search_input" placeholder="Search products" />
                         <button type="submit" className="btn"><FaSearch /></button>
@@ -148,10 +148,10 @@ const Header = () => {
                       </div>
                     </div>
 
-                
+
                     <div className="show_sm_box">
                       <nav className={`nav-links show`}>
-                        <NavLink to="/home" activeClassName="active" exact onClick={toggleMenu}>Bosh sahifa</NavLink>
+                        <NavLink to="/" activeClassName="active" exact onClick={toggleMenu}>Bosh sahifa</NavLink>
                         <NavLink to="/about" activeClassName="active" exact onClick={toggleMenu}>Loyiha haqida</NavLink>
                         <NavLink to="/nmm" activeClassName="active" exact onClick={toggleMenu}>NMM</NavLink>
                         <NavLink to="/news" activeClassName="active" exact onClick={toggleMenu}>Yangiliklar</NavLink>

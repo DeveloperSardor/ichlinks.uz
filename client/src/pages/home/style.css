@@ -35,8 +35,6 @@
   text-align: left;
 }
 
-
-
 .home-page .section_one .top_object .left .more {
   width: 381px;
   height: 51pxpx;
@@ -59,9 +57,6 @@
   transition: 0.6s ease;
   cursor: pointer;
 }
-
-
-
 
 .home-page .slider_btns {
   display: flex;
@@ -133,6 +128,85 @@ section.section-two .btns button:hover {
 
 section.section-two .btns button.active {
   background: rgb(68, 68, 68);
+}
+.about_card_wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.about_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* padding: 20px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: #fff;
+  height: 380px;
+}
+.about_card .right {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+}
+
+.about_card img {
+  border-radius: 10px;
+  margin-right: 20px;
+  width: 100%;
+  height: 100%;
+}
+.about_card p {
+  margin-top: 20px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.top {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.bottom_btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 381px;
+  align-self: flex-start;
+}
+
+.bottom_btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Swiper styles */
+.swiper-pagination {
+  bottom: 10px !important;
+  text-align: center;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #d0d0d0 !important;
 }
 
 section.section-two .cards {
@@ -329,8 +403,7 @@ section.section-three .contents .right .bottom_btn:hover {
 }
 
 section.section-four {
-  padding: 2em 5em;
-  margin-top: 2em;
+  padding: 177px 0;
 }
 
 section.section-four .top {
@@ -392,20 +465,20 @@ section.section-four .news {
 }
 
 section.section-four .news .new-card {
-  width: 420px;
-  height: 138px;
-  margin-top: 7em;
+  background: rgb(12, 12, 12) !important;
+  max-width: 520px;
+  width: 100%;
+  height: 230px;
+  margin: 60px 20px 60px 0;
 }
 
 section.section-four .news .new-card .top {
   display: flex;
-  gap: 2em;
 }
 
 section.section-four .news .new-card .top .left img {
   width: 200px;
   height: 138px;
-  gap: 0px;
   border-radius: 6px 0px 0px 0px;
   opacity: 0px;
 }
@@ -609,9 +682,9 @@ section.section-five .gallery_wrapper .gallery_card .right .more_btn svg {
 section.section-six {
   padding: 4em 5em;
   margin-top: 6.5em;
-  display: flex;
+  /* display: flex; */
   color: #ffffff;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 section.section-six .right {
@@ -624,11 +697,11 @@ section.section-six .left {
   gap: 3.5em;
 }
 
-section.section-six .left .texts {
+section.section-six .texts {
   color: #fcfcfc;
 }
 
-section.section-six .left .texts h3 {
+section.section-six .texts h3 {
   font-family: Bebas Neue;
   font-size: 27px;
   font-weight: 400;
@@ -637,11 +710,12 @@ section.section-six .left .texts h3 {
   text-align: left;
 }
 
-section.section-six .left button {
+section.section-six button {
   width: 381px;
   height: 51px;
-  padding: 12px 0px 0px 0px;
-  gap: 10px;
+  padding: 12px 0px 12px 0px;
+  /* gap: 10px; */
+
   border-radius: 6px 0px 0px 0px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
@@ -656,13 +730,13 @@ section.section-six .left button {
   cursor: pointer;
 }
 
-section.section-six .left button:hover {
+section.section-six button:hover {
   background: #fcfcfc;
   color: black;
   transition: 0.5s ease;
 }
 
-section.section-six .left .texts p {
+section.section-six .texts p {
   font-family: Roboto Condensed;
   font-size: 20px;
   font-weight: 700;
@@ -680,7 +754,8 @@ section.section-six .right {
 section.section-six .right .category {
   display: flex;
   align-items: center;
-  width: 740px;
+  width: 100%;
+  max-width: 740px;
   gap: 1.7em;
   border-bottom: 1px solid #3e3e3e;
   padding-bottom: 0.7em;
@@ -885,18 +960,16 @@ section.section-eight .top .right button:hover {
   color: black;
 }
 
-
-
 section.section-eight .vds_wrp {
-  margin-top: 4.6em;
   display: flex;
-  gap: 4em;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 section.section-eight .vds_wrp .vd {
   color: #fcfcfc;
-  width: 220px;
+  width: 240px;
+  margin: auto;
 }
 
 section.section-eight .vds_wrp .vd img {
@@ -997,7 +1070,6 @@ section.section-eight .vds_wrp .vd .watch_btn {
   color: #ffffff;
   border: 1px solid #fff;
 }
-
 
 section.section-eight .vds_wrp .vd .watch_btn:hover {
   background: #ffffff;
